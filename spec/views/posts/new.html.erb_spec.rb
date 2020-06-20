@@ -1,18 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe "posts/new", :type => :view do
-  before(:each) do
-    assign(:post, Post.new(
-      :title => "MyString"
-    ))
-  end
-
-  it "renders new post form" do
-    render
-
-    assert_select "form[action=?][method=?]", posts_path, "post" do
-
-      assert_select "input[name=?]", "post[title]"
-    end
-  end
-end
+# RSpec.describe "posts/new.html.erb", type: :view do
+#   pending "add some examples to (or delete) #{__FILE__}"
+# end
